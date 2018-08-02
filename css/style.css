@@ -1,0 +1,56 @@
+html {
+}
+
+body {
+    background: black;
+    width: 99%;
+    height: 100%;
+    margin-left: auto;
+	margin-right: auto;
+	font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+/*--------------------------------------------------------*/
+#page-wrapper{
+
+}
+/*--------------------------------------------------------*/
+/*-----------------jquery general classes--------------------*/
+.displayNone {
+    display: none;
+}
+
+.switchButtonIcon p:nth-child(1){
+    display: block; 
+}
+.switchButtonIcon p:nth-child(2){
+    display: none; 
+}
+.switchButtonIconOther p:nth-child(1){
+    display: none; 
+}
+.switchButtonIconOther p:nth-child(2){
+    display: block; 
+}
+
+
+/*-----------------image classes--------------------*/
+.imgSizeSqr {
+    width: 400px;
+    height: auto;
+}
+
+.imgPosCent {
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+}
+
+/*-----------------unused--------------------*/
+.justPallete{
+    color: #4075E8, #363534, #EDEDED, #292828, #6DDFFF
+}
+.smoothTransition { unused
+    transform: translateZ(0);
+}

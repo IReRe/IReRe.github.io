@@ -87,6 +87,7 @@ function workFunction() {
             $(".workShortcut").click(function() {
                 if (workAnimation === false) {
                     workAnimation = true;
+                    t = 1200;
                     nextWorkNumber = ($(this).index()+1);
                     jumpDistWorkNumber = nextWorkNumber-workNumber; 
 
@@ -95,9 +96,10 @@ function workFunction() {
                     } else if ((jumpDistWorkNumber) < 0) {
                         prevWork();
                     } else {
+                        t = 800;
                         endWork();
                     } 
-                    setTimeout(function(){workAnimation = false}, 1650);
+                    setTimeout(function(){workAnimation = false}, t);
                 }
             });
 

@@ -96,8 +96,8 @@ function workFunction() {
                     } else if ((jumpDistWorkNumber) < 0) {
                         prevWork();
                     } else {
-                        t = 800;
                         endWork();
+                        t = 800;
                     } 
                     setTimeout(function(){workAnimation = false}, t);
                 }
@@ -123,7 +123,7 @@ function workFunction() {
                 } else {
                     if (workNumber === finalWorkNumber) {
                         endWork();  
-                        t = 700;
+                        t = 800;
                     } 
                     else {
                         nextWorkNumber = workNumber + 1;

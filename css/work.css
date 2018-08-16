@@ -222,6 +222,7 @@ body {
 .workShortcutBar {
     width: 100%;
     display: none;
+    margin-top: 50px;
 }
 
 /* --- workframes shortcut bar animations --- */

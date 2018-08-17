@@ -137,7 +137,7 @@ header {
 }
 
 /* --- Header Bot Mobile Menu --- */
-.mobileMenu {}
+
 .mobileMenu ul {
     display: flex;
     flex-direction: column;
@@ -159,9 +159,6 @@ header {
     right: 0;   
 }
 
-.nightMode p:nth-child(1){
-    letter-spacing: 10.5px;
-}
 
 /* --- Header Bot Menu Buttons --- */
 .menuButton {

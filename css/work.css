@@ -16,7 +16,7 @@ body {
 
 /* --- Work Content --- */
 .workBox {
-    z-index: 50;
+    z-index: 400;
     height: 100%;
     width: 80%;
     position: relative;
@@ -176,7 +176,7 @@ body {
 
 /* --- workframes shortcut bar --- */
 .workShortcutSide {
-    z-index: 100;
+    z-index: 600;
     width: 7%;
     height: 100%;
     margin-left: 0%;
@@ -302,7 +302,6 @@ body {
 
 /* --- workframes open/close large desc --- */
 .workContentLargeDesc { 
-    z-index: 90;
     display: flex;
     justify-content: center;
     align-items: center; 
@@ -311,8 +310,6 @@ body {
     display: none;
 }
 .workContentLargeDesc .workFrame {
-    z-index: 500;
-    
     -webkit-clip-path: polygon(0 40%, 100% 40%, 100% 100%, 0 100%);
     clip-path: polygon(0 40%, 100% 40%, 100% 100%, 0 100%);    
     
@@ -322,7 +319,7 @@ body {
 }
 
 .workContentLargeReturnButton {
-    z-index: 100;
+    z-index: 600;
     position: fixed;
     top: 0%;
     left: 5%;
@@ -363,7 +360,7 @@ body {
 
 /* --- work large desc --- */
 .workDescBig { 
-    z-index: 90;
+    z-index: 900;
     transition: all 0.8s ease;
     -webkit-transition: all  0.8s ease;
     

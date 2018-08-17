@@ -245,12 +245,15 @@ function workFunction() {
             $(".workContent").addClass("workContentLargeDesc"); 
             //closeMoMenu();
         }, 800); 
-
+        
+        setTimeout(function(){
+            $(".workDesc").removeClass("workDescDeco");
+        }, 1200); 
+        
         setTimeout(function(){
             $(".workDescBig").removeClass("displayNone");
             $(".workDescBig"+workNumber).removeClass("displayNone");
 
-            $(".workDesc").removeClass("workDescDeco");
             $(".workDesc p").addClass("displayNone");
 
             expandedWork = true;

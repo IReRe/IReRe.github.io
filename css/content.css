@@ -11,7 +11,7 @@
     color: #363534;
     font-weight: 100;
     position: relative;
-    z-index: 0;
+    z-index: 400;
 }
 
 /* --- --- --- --- */
@@ -70,6 +70,6 @@
 /* --- --- --- --- */
 /* --- Content --- */
 .contentText{
-    z-index: 50;
+    z-index: 500;
     position: relative;
 }

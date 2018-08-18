@@ -122,24 +122,24 @@
 
 .loadedAnimation {}
 .loadedAnimation .loadingCircles {
-	animation: loadingCircleFade 0.8s 1s forwards;
-	-webkit-animation: loadingCircleFade 0.8s 1s forwards;
+	animation: loadingCircleFade 0.8s 0.2s forwards;
+	-webkit-animation: loadingCircleFade 0.8s 0.2s forwards;
 }
 .loadedAnimation h1 {
-	animation: loadingWordShrink 0.8s 0.8s forwards;
-	-webkit-animation: loadingWordShrink 0.8s 0.8s forwards;
+	animation: loadingWordShrink 0.8s 0.0s forwards;
+	-webkit-animation: loadingWordShrink 0.8s 0.0s forwards;
 }
 .loadedAnimation .loadingscrnMid {
-	animation: loadingMidExpand 0.5s 1.3s forwards;
-	-webkit-animation: loadingMidExpand 0.5s 1.3s forwards;
+	animation: loadingMidExpand 0.5s 0.5s forwards;
+	-webkit-animation: loadingMidExpand 0.5s 0.5s forwards;
 }
 .loadedAnimation .loadingscrnTop {
-    animation: loadingTopOpen 0.7s 1.8s forwards;
-    -webkit-animation: loadingTopOpen 0.7s 1.8s forwards;
+    animation: loadingTopOpen 0.7s 1.0s forwards;
+    -webkit-animation: loadingTopOpen 0.7s 1.0s forwards;
 }
 .loadedAnimation .loadingscrnBot {
-	animation: loadingBotOpen 0.7s 1.8s forwards;
-	-webkit-animation: loadingBotOpen 0.7s 1.8s forwards;
+	animation: loadingBotOpen 0.7s 1.0s forwards;
+	-webkit-animation: loadingBotOpen 0.7s 1.0s forwards;
 }
     
 @keyframes loadingCircleFade {

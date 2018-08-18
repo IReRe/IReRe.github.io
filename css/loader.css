@@ -21,9 +21,9 @@
 }
 .loadingscrnAnim h1 {
     color: black;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 100;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     transform: scale(0.9,1.2);
 }
 .loadingCircles {
@@ -122,24 +122,24 @@
 
 .loadedAnimation {}
 .loadedAnimation .loadingCircles {
-	animation: loadingCircleFade 0.8s 0s forwards;
-	-webkit-animation: loadingCircleFade 0.8s 0s forwards;
+	animation: loadingCircleFade 0.8s 1s forwards;
+	-webkit-animation: loadingCircleFade 0.8s 1s forwards;
 }
 .loadedAnimation h1 {
-	animation: loadingWordShrink 1.0s 0.8s forwards;
-	-webkit-animation: loadingWordShrink 1.3s 0.8s forwards;
+	animation: loadingWordShrink 0.8s 0.8s forwards;
+	-webkit-animation: loadingWordShrink 0.8s 0.8s forwards;
 }
 .loadedAnimation .loadingscrnMid {
-	animation: loadingMidExpand 1s 1.5s forwards;
-	-webkit-animation: loadingMidExpand 1s 1.5s forwards;
+	animation: loadingMidExpand 0.5s 1.3s forwards;
+	-webkit-animation: loadingMidExpand 0.5s 1.3s forwards;
 }
 .loadedAnimation .loadingscrnTop {
-    animation: loadingTopOpen 1.5s 2.4s forwards;
-    -webkit-animation: loadingTopOpen 1.5s 2.4s forwards;
+    animation: loadingTopOpen 0.7s 1.8s forwards;
+    -webkit-animation: loadingTopOpen 0.7s 1.8s forwards;
 }
 .loadedAnimation .loadingscrnBot {
-	animation: loadingBotOpen 1.5s 2.4s forwards;
-	-webkit-animation: loadingBotOpen 1.5s 2.4s forwards;
+	animation: loadingBotOpen 0.7s 1.8s forwards;
+	-webkit-animation: loadingBotOpen 0.7s 1.8s forwards;
 }
     
 @keyframes loadingCircleFade {

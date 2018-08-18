@@ -27,12 +27,14 @@
     transform: scale(0.8,1);
 }
 .loadingscrnTop {
+    position: absolute;
     width: 100%;
     height: 50%;
     background-color: #EDEDED;
     border-bottom: 1px solid black;
 }
 .loadingscrnBot {
+    position: absolute;
     width: 100%;
     height: 50%;
     background-color: #EDEDED;

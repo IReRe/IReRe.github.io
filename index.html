@@ -33,13 +33,16 @@
     
     <div class="loadingscrn">
         <div class="loadingscrnAnim">
-            <h1>L O A D I N G</h1>
-            <div class="loader1"></div>
-            <div class="loader2"></div>
-            <div class="loader3"></div>
+            <h1 class>L O A D I N G</h1>
+            <div class="loadingCircles">
+                <div class="loaderC1"></div>
+                <div class="loaderC2"></div>
+                <div class="loaderC3"></div>
+            </div>
         </div>
         <div class="loadingscrnTop"></div>
-        <div class="loadingscrnBot"></div>
+        <div class="loadingscrnMid"></div>
+        <div class="loadingscrnBot"></div>    
     </div>
     
 	<header>
@@ -71,10 +74,10 @@
                         <p>_</p>
                     </a></li> 
                     <li><a class="menuButton" href="">
-                        About Me
+                        Contact
                     </a></li>
                     <li><a class="menuButton" href="">
-                        Art ߷
+                        Art
                     </a></li>
                     <li><a class="menuButton" href="work.html">
                         Work
@@ -115,14 +118,15 @@
         });
         
         function preloading() {
+			$(this).scrollTop(0);
+			$("body").css({"overflow":"hidden"});
             setTimeout(function() {
-                $(".loadingscrnAnim").css({"opacity": "0"});
-                $(".loadingscrnTop").addClass("animLoadingscrnTop");
-                $(".loadingscrnBot").addClass("animLoadingscrnBot");
-            }, 2400);  
+                $(".loadingscrn").addClass("loadedAnimation");
+            }, 3000);  
             setTimeout(function() {
                 $(".loadingscrn").addClass("displayNone");
-            }, 54000);  
+                $("body").css({"overflow":"scroll"});
+            }, 4000+3000);  
         }
     </script>
     

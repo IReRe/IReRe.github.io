@@ -6,6 +6,7 @@
     width: 99%;
     height: 100%;
 }
+
 .loadingscrnAnim {
     z-index: 1050;
     position: absolute;
@@ -16,56 +17,24 @@
     width: 100%;
     height: 100%;
     
-    transition: all 0.3s ease-out; 
-    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
 }
 .loadingscrnAnim h1 {
     color: black;
     font-size: 24px;
     font-weight: 100;
     letter-spacing: 3px;
-    transform: scale(0.8,1);
+    transform: scale(0.9,1.2);
 }
-.loadingscrnTop {
-    position: absolute;
-    width: 100%;
-    height: 50%;
-    background-color: #EDEDED;
-    border-bottom: 1px solid black;
+.loadingCircles {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  
+  opacity: 100;
 }
-.loadingscrnBot {
-    position: absolute;
-    width: 100%;
-    height: 50%;
-    background-color: #EDEDED;
-    border-top: 1px solid black;
-}
-.animLoadingscrnTop {
-    -webkit-animation: aniLoadingscrnTop 0.8s forwards;
-    animation: aniLoadingscrnTop 0.8s forwards;
-}
-    @-webkit-keyframes aniLoadingscrnTop {
-        0% {top: 0%;}
-        100% {top: -55%;}
-    }
-    @keyframes aniLoadingscrnTop {
-        0% {top: 0%;}
-        100% {top: -55%;}
-    }
-.animLoadingscrnBot {
-    -webkit-animation: aniLoadingscrnBot 0.8s forwards;
-    animation: aniLoadingscrnBot 0.8s forwards;
-}
-    @-webkit-keyframes aniLoadingscrnBot {
-        0% {top: 50%;}
-        100% {top: 105%;}
-    }
-    @keyframes aniLoadingscrnBot {
-        0% {top: 50%;}
-        100% {top: 105%;}
-    }
-
-.loader1 {
+.loaderC1 {
     position: absolute;
     border-radius: 50%;
 
@@ -77,7 +46,7 @@
     animation: spin1 1.2s linear infinite;
     -webkit-animation: spin1 1.2s linear infinite;
 }
-.loader2 {
+.loaderC2 {
     position: absolute;
     border-radius: 50%;
 
@@ -86,10 +55,10 @@
     width: 225px;
     height: 225px;
 
-    animation: spin1 2.2s linear infinite;
-    -webkit-animation: spin1 2.2s linear infinite;
+    animation: spin2 2.2s linear infinite;
+    -webkit-animation: spin2 2.2s linear infinite;
 }
-.loader3 {
+.loaderC3 {
     position: absolute;
     border-radius: 50%;
 
@@ -102,32 +71,125 @@
     animation: spin3 2.6s linear infinite;
     -webkit-animation: spin3 2.6s linear infinite;
 }
-
 @keyframes spin1 {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
 }
 @-webkit-keyframes spin1 {
-    0% { -webkit-transform: rotate(0deg); }
-    100% { -webkit-transform: rotate(360deg); }
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
 }
 @keyframes spin2 {
     0% { transform: rotate(40deg); }
     100% { transform: rotate(400deg); }
 }
 @-webkit-keyframes spin2 {
-    0% { -webkit-transform: rotate(40deg); }
-    100% { -webkit-transform: rotate(400deg); }
+    0% { transform: rotate(40deg); }
+    100% { transform: rotate(400deg); }
 }
 @keyframes spin3 {
     0% { transform: rotate(240deg); }
     100% { transform: rotate(-120deg); }
 }
 @-webkit-keyframes spin3 {
-    0% { -webkit-transform: rotate(240deg); }
-    100% { -webkit-transform: rotate(-120deg); }
+    0% { transform: rotate(240deg); }
+    100% { transform: rotate(-120deg); }
+}
+
+.loadingscrnMid {
+	position: absolute;
+	z-index: 1100;
+	height: 50%;
+	width: 100%;
+	border-bottom: 2px solid transparent;
+	transform: scaleX(0.1); 
+}
+.loadingscrnTop {
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    background-color: #EDEDED;
+    border-bottom: 1px solid transparent;
+}
+.loadingscrnBot {
+    position: absolute;
+	top: 50%;
+    width: 100%;
+    height: 50%;
+    background-color: #EDEDED;
+    border-top: 1px solid transparent;
+}
+
+.loadedAnimation {}
+.loadedAnimation .loadingCircles {
+	animation: loadingCircleFade 0.8s 0s forwards;
+	-webkit-animation: loadingCircleFade 0.8s 0s forwards;
+}
+.loadedAnimation h1 {
+	animation: loadingWordShrink 1.0s 0.8s forwards;
+	-webkit-animation: loadingWordShrink 1.3s 0.8s forwards;
+}
+.loadedAnimation .loadingscrnMid {
+	animation: loadingMidExpand 1s 1.5s forwards;
+	-webkit-animation: loadingMidExpand 1s 1.5s forwards;
+}
+.loadedAnimation .loadingscrnTop {
+    animation: loadingTopOpen 1.5s 2.4s forwards;
+    -webkit-animation: loadingTopOpen 1.5s 2.4s forwards;
+}
+.loadedAnimation .loadingscrnBot {
+	animation: loadingBotOpen 1.5s 2.4s forwards;
+	-webkit-animation: loadingBotOpen 1.5s 2.4s forwards;
+}
+    
+@keyframes loadingCircleFade {
+	0% {opacity: 100;}
+	100% {opacity: 0;}
+}
+@keyframes loadingWordShrink {
+	0% {transform: scale(0.9,1.2);}
+	100% {transform: scale(0.9,0);}
+}
+@keyframes loadingMidExpand {
+	0% {transform: scaleX(0.1); border-color: transparent;}
+	20% {transform: scaleX(0.1); border-color: black;}
+	95% {transform: scaleX(1); border-color: black;}
+	100% {transform: scaleX(1); border-color: transparent;}
+}
+@keyframes loadingTopOpen {
+	0% {top: 0%; border-color: transparent;}
+	10% {top: 0%; border-color: black;}
+	100% {top: -55%;}
+}
+@keyframes loadingBotOpen {
+	0% {top: 50%; border-color: transparent;}
+	10% {top: 50%; border-color: black;}
+	100% {top: 105%;}
+}
+@-webkit-keyframes loadingCircleFade {
+	0% {opacity: 100;}
+	100% {opacity: 0;}
+}
+@-webkit-keyframes loadingWordShrink {
+	0% {transform: scale(0.9,1.2);}
+	100% {transform: scale(0.9,0);}
+}
+@-webkit-keyframes loadingMidExpand {
+	0% {transform: scaleX(0.1); border-color: transparent;}
+	20% {transform: scaleX(0.1); border-color: black;}
+	95% {transform: scaleX(1); border-color: black;}
+	100% {transform: scaleX(1); border-color: transparent;}
+}
+@-webkit-keyframes loadingTopOpen {
+	0% {top: 0%; border-color: transparent;}
+	10% {top: 0%; border-color: black;}
+	100% {top: -55%;}
+}
+@-webkit-keyframes loadingBotOpen {
+	0% {top: 50%; border-color: transparent;}
+	10% {top: 50%; border-color: black;}
+	100% {top: 105%;}
 }
 
 .loaded {
-
 }

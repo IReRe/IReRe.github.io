@@ -1,19 +1,31 @@
-::-webkit-scrollbar {
-    width: 0px;  /* remove scrollbar space */
-    background: transparent;  /* optional: just make scrollbar invisible */
-}
 /* --- --- --- --- */
 /* --- --- --- --- */
 .content {
-	width: 100%;
-	height: 5400px;
+    z-index: 400;
+    top: 0;
+    bottom 0;
+    position:absolute;
+    
+	width: 99%;
+	height: 100%;
     background-color: #EDEDED;
     color: #363534;
     font-weight: 100;
-    position: relative;
-    z-index: 400;
+    
+    overflow: hidden;
 }
 
+.startContent {
+    width: 100%;
+	height: 100%;
+}
+.startToWork {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+	height: 10%;
+    border-top: 2px dashed #292828;
+}
 /* --- --- --- --- */
 /* --- Background --- */
 .background {

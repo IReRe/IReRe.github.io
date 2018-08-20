@@ -70,6 +70,7 @@
 }
 @media screen and (max-width: 800px) {
     .centerPiece {
+        margin-top: 200px;
         height: calc(100% - 280px);
     }
 }
@@ -86,7 +87,11 @@
     background-color: #E08970;#ADD9FF;
     border: 3px double #292828;
 }
-
+@media screen and (max-width: 400px), (max-height: 600px)  {
+    .eyeCatcher {
+        display: none;
+    }
+}
 
 .ecL0 {
     position: absolute;

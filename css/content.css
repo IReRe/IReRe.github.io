@@ -68,6 +68,11 @@
     justify-content: center;
     align-items: center; 
 }
+@media screen and (max-width: 800px) {
+    .centerPiece {
+        height: calc(100% - 280px);
+    }
+}
 .eyeCatcher {
     width: 400px;
     height: 400px;

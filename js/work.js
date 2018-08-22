@@ -240,7 +240,7 @@ function workFunction() {
 
     $(".workContentLargeReturnButton").click(function() {
         if (expandedWork === true) {
-            closeExpanWork(); 
+            closeExpandWork(); 
         }          
     });
 
@@ -272,9 +272,9 @@ function workFunction() {
         }, 1400);            
     }  
 
-    function closeExpanWork() {
+    function closeExpandWork() {
 
-        closeExpanWorkAnimations();
+        closeExpandWorkAnimations();
 
         setTimeout(function(){
             $(".workDescBig").addClass("displayNone");      
@@ -328,7 +328,7 @@ function workFunction() {
         }, 2200);            
     }
 
-    function closeExpanWorkAnimations() {                        
+    function closeExpandWorkAnimations() {                        
         //--- use next work animations ---
         nextWork();
 

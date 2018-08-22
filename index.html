@@ -16,9 +16,9 @@
     
     <link href="css/loader.css" type="text/css" media="screen" rel="stylesheet">
     <link href="css/header.css" type="text/css" media="screen" rel="stylesheet">
-    <link href="css/content.css" type="text/css" media="screen" rel="stylesheet">
     <link href="css/footer.css" type="text/css" media="screen" rel="stylesheet">
     
+    <link href="css/content.css" type="text/css" media="screen" rel="stylesheet">
     <link href="css/work.css" type="text/css" media="screen" rel="stylesheet">
     
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -97,8 +97,10 @@
             <div class="centerPiece">
                 <div class="eyeCatcher">
                 
-                    <div class="test1232"></div>
-               
+                    <div class="eyeCatcherTop"></div>
+                    <div class="eyeCatcherBottom"></div>
+                        
+                    <div class="thingy"></div>
                 </div>
             </div>
             
@@ -111,7 +113,9 @@
             </div>
             
             <div class="socialBar">
-                <div class="">https://github.com/IReRe</div>
+                <a class="socialIcon" href="https://linkedin.com/" data-name="LinkedIn"></a>
+                <a class="socialIcon" href="https://github.com/IReRe" data-name="GitHub"></a>
+                <a class="socialIcon" href="" data-name="a"></a>
             </div>
         </div>
         
@@ -211,6 +215,15 @@
                 $(".loadingscrn").css({"display":"none"});
             }, 1700+xLoadingTime);  
         }
+        
+        $(document).bind('mousemove', function(e){
+            setTimeout(function(){   
+                $('.thingy').css({
+                    left:  e.pageX - 250,
+                    top:   e.pageY - 180
+                });
+            }, 200);
+        });
     </script>
     
 </body>    

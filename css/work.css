@@ -116,18 +116,17 @@
         100% {top: 0%;}
     }
 /* --- Work pictures --- */
-.workPic1 {background-image: url(../img/Screenshot.png);
-    background-image: url(http://images.nationalgeographic.com/wpf/media-live/photos/000/883/cache/macaskill-mountain-biking-scotland_88360_990x742.jpg); 
-     
+.workPic1 {
+    background-image: url(../img/w10.jpg);     
 }
 .workPic2 {
-    background-image: url(http://images.nationalgeographic.com/wpf/media-live/photos/000/888/cache/sailfish-isla-mujeres-mexico_88866_990x742.jpg); 
+    background-image: url(../img/w20.jpg); 
 }
 .workPic3 {
-    background-image: url(http://images.nationalgeographic.com/wpf/media-live/photos/000/409/cache/ice-canopy-japan-skerry_40982_990x742.jpg); 
+    background-image: url(../img/w30.jpg); 
 }
 .workPic4 {
-    background-image: url(http://images.nationalgeographic.com/wpf/media-live/photos/000/895/cache/girl-swimming-underwater_89539_990x742.jpg); 
+    background-image: url(../img/w40.jpg); 
 }
 /* --- Work small descriptions ---*/
 .workDesc {
@@ -381,6 +380,8 @@
     height: 40%;
     background-color:  #292828;
     color: #EDEDED;
-    
-    
+}
+.workDescBigBlackInfo p {
+    margin-top: 10px;
+    font-size: 24px
 }

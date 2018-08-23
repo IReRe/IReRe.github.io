@@ -164,16 +164,15 @@
                 <section class="workDescBig1 displayNone">
                     
                     <div class="workDescBigBlackInfo">
-                        Location: Cloud City
+                        <p>Location: Siem Reap, Kambodia</p>p> 
                     </div>
-                    
-                    <p>oi</p>
-                    
+                  
                     <div class="workDescBigPictureContainer01">
-                        <img class="imgSizeSqr imgPosCent" src="img/wutwutwut.png">
+                        <img class="imgSizeSqr imgPosCent img1 img2" src="img/w11.jpg">
+                        <img class="imgSizeSqr imgPosCent img1" src="img/w12.jpg">
+                        <img class="imgSizeSqr imgPosCent img1" src="img/w13.jpg">
+                        <img class="imgSizeSqr imgPosCent img1" src="img/w14.jpg">
                     </div>
-                    
-                    <p>oi</p>
                 </section>
 
                 <section class="workDescBig2 displayNone">
@@ -192,7 +191,7 @@
                     <div class="workDescBigBlackInfo">Location: Cloud City</div>
                     <div class="">4</div>
                     <div class="workDescBigPictureContainer01">
-                        <img class="imgSizeSqr imgPosCent" src="img/wutwutwut.png">
+                        <img class="imgSizeSqr imgPosCent" src="img/w11.jpg">
                     </div>
                 </section>
 
@@ -225,6 +224,12 @@
                 $('.thingy').css({"top":  ((e.pageY / $(document).height() * 400) -23), "left":  ((e.pageX / $(document).width() * 400) -23) });
             }, 400);
         });
+        $(document).on('touchstart', function(e){
+            setTimeout(function(){  
+                $('.thingy').css({"top":  ((e.pageY / $(document).height() * 400) -23), "left":  ((e.pageX / $(document).width() * 400) -23) });
+            }, 400);
+        });
+        
     </script>
     
 </body>    

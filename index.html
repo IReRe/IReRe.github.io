@@ -218,10 +218,9 @@
         
         $(document).bind('mousemove', function(e){
             setTimeout(function(){   
-                $('.thingy').css({
-                    left:  e.pageX - 500,
-                    top:   e.pageY - 200
-                });
+                setTimeout(function(){   
+                $('.thingy').css({"top":  ((e.pageY / $(document).height() * 400) -100), "left":  ((e.pageX / $(document).width() * 400) -100) });
+            }, 200);
             }, 200);
         });
     </script>

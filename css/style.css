@@ -49,16 +49,11 @@ body {
 }
 
 .img1 {
-    margin-top: 20px;
+    margin-top: 0px;
     width: 100%;
 }
-.img2 {
-    margin-top: 0px;
-}
+
 /*-----------------unused--------------------*/
 .justPallete{
     color: #4075E8, #363534, #EDEDED, #292828, #6DDFFF, #27f796, #E08970
-}
-.smoothTransition {
-    transform: translateZ(0);
 }

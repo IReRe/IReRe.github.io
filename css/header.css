@@ -202,8 +202,12 @@ header {
 
 /* --- Small header + animation --- */
 .headerFade{
-    -webkit-animation: headerAnim 0.8s forwards;
-    animation: headerAnim 0.8s forwards;
+    -webkit-animation: headerAnim 0.5s forwards;
+    animation: headerAnim 0.5s forwards;
+}
+.headerFadeBack{
+    -webkit-animation: headerAnim 0.5s forwards reverse;
+    animation: headerAnim 0.5s forwards reverse;
 }
     @-webkit-keyframes headerAnim {
         from {top: 0px;}

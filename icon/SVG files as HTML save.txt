@@ -1,1 +1,0 @@
-<div class="bla"> {% include icon/icon_name.html %} </div>

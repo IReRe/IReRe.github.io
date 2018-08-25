@@ -5,6 +5,9 @@ function workFunction() {
         $(".startToWork").click(function() {
             onLoadWork();
         });
+        $(".menu ul li:nth-child(5) div").click(function() {
+            onLoadWork();
+        });
     });
     
     

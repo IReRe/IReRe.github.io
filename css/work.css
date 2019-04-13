@@ -373,10 +373,6 @@
     }
 
 .workDescBig section {
-
-}
-.workDescBig section div{
-    scroll-snap-align: end;
 }
 
 .workDescBigBlackInfo {
@@ -385,25 +381,38 @@
     background-color:  #292828;
     color: #EDEDED;
 }
-.workDescBigBlackInfo p {
-}
 
-.workDescBigMainContainer div{
+.workDescBigMainContainer {
+}
+.workDescBigPanel {
     height: 100vh;
 
     display: flex;
     align-content: center;
     justify-content: center;
     vertical-align: middle;
-}
-.workDescBigText p{
-    height: 50px; 
-}
-
-.workDescBigImg {
-    background-size: auto 90%; 
+    overflow: hidden; 
+    
+    background-size: cover; 
     background-repeat: no-repeat;
     background-position: center; 
+}
+
+.workDescBigPanel video {
+    min-width: 100%; 
+    min-height: 100%;
+    object-fit: cover;
+}
+.workDescBigPanelTextbox {
+    position: absolute;
+
+    margin-top: 75vh;
+    margin-left: 0vw;
+    height: 10vh;
+    width: 60vw;
+
+    border: 2px solid #292828;
+    background-color: #757575;
 }
 
 /*Images Work1*/
@@ -418,4 +427,9 @@
 }
 .W1Img4 {
     background-image: url(../img/w14.jpg); 
+}
+
+.workDescBigPanelEnd {
+    height: 30vh;
+    background-color: red;
 }

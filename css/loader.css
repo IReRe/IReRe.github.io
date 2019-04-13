@@ -191,7 +191,7 @@
 	100% {top: 105%;}
 }
 
-.imagePreloadingSpace{
+.mediaPreloadingSpace{
     position: absolute;
     overflow: hidden;
     left: -9999px; 

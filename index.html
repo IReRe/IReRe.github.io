@@ -44,7 +44,7 @@
         <div class="loadingscrnMid"></div>
         <div class="loadingscrnBot"></div>   
         
-        <div class="imagePreloadingSpace">
+        <div class="mediaPreloadingSpace">
             <img src="img/w10.jpg">
             <img src="img/w20.jpg">
             <img src="img/w30.jpg">
@@ -171,39 +171,46 @@
 
                 <section class="workDescBig1 displayNone">
                     
-                    <div class="workDescBigBlackInfo">
+                    <div class="workDescBigBlackInfo snap">
                         <p>Location: Siem Reap, Kambodia</p>
                     </div>
                   
                     <div class="workDescBigMainContainer">
-                        <div class="workDescBigImg W1Img1"></div>
-                        <div class="workDescBigImg W1Img2"></div>
-                        <div class="workDescBigText">
-                            <p> oi </p>
+
+                        <div class="workDescBigPanel snap W1Img1"></div>
+
+                        <div class="workDescBigPanel snap">
+                            <video autoplay muted loop preload="auto">
+                                <source src="img/test.mp4" type="video/mp4">
+                                HTML5 Video not supported by Browser
+                            </video>
+                            <div class=workDescBigPanelTextbox></div>
                         </div>
-                        <div class="workDescBigImg W1Img3"></div>
-                        <div class="workDescBigImg W1Img4"></div>
+
+                        <div class="workDescBigPanel snap W1Img2"></div>
+
+                        <div class="workDescBigPanel snap"></div>
+
+                        <div class="workDescBigPanel snap W1Img3"></div>
+                        <div class="workDescBigPanel snap W1Img4"></div>
+                        <div class="workDescBigPanelEnd snap"></div>
+
                     </div>
                 </section>
 
                 <section class="workDescBig2 displayNone">
                     <div class="workDescBigBlackInfo">Location: Cloud City</div>
-                    <div class="">2</div> 
-                    <p>oi</p><p>oi</p><p>oi</p><p>oi</p><p>oi</p><p>oi</p><p>oi</p><p>oi</p><p>oi</p><p>oi</p><p>oi</p><p>oi</p><p>oi</p><p>oi</p><p>oi</p><p>oi</p><p>oi</p><p>oi</p><p>oi</p><p>oi</p><p>oi</p><p>oi</p><p>oi</p><p>oi</p><p>oi</p><p>oi</p><p>oi</p><p>oi</p><p>oi</p><p>oi</p><p>oi</p><p>oi</p><p>oi</p><p>oi</p><p>oi</p><p>oi</p><p>oi</p><p>oi</p><p>oi</p><p>oi</p><p>oi</p><p>oi</p><p>oi</p><p>oi</p><p>oi</p><p>oi</p><p>oi</p><p>oi</p><p>oi</p><p>oi</p><p>oi</p><p>oi</p><p>oi</p><p>oi</p><p>oi</p><p>oi</p>
+                    <div class="workDescBigMainContainer"></div>
                 </section>
 
                 <section class="workDescBig3 displayNone">
                     <div class="workDescBigBlackInfo">Location: Cloud City</div>
-                    <div class="">3</div>
-                    <div class="workDescBigBlackInfo">3</div>
+                    <div class="workDescBigMainContainer"></div>
                 </section>
 
                 <section class="workDescBig4 displayNone">
                     <div class="workDescBigBlackInfo">Location: Cloud City</div>
-                    <div class="">4</div>
-                    <div class="workDescBigPictureContainer01">
-                        <img class="imgSizeSqr imgPosCent" src="img/w11.jpg">
-                    </div>
+                    <div class="workDescBigMainContainer"></div>
                 </section>
 
             </div>
@@ -226,26 +233,26 @@
             }, xLoadingTime);  
             setTimeout(function() {
                 $(".loadingscrn").css({"display":"none"});
-            }, 1700+xLoadingTime);  
+            }, 1700 + xLoadingTime);  
         }
         
-        $(document).bind('mousemove', function(e){
+        $(document).bind("mousemove", function(e){
             setTimeout(function(){  
-                $('.thingy').css({
+                $(".thingy").css({
                     "top":  ((e.pageY / $(document).height() * 400) -53), 
                     "left": ((e.pageX / $(document).width() * 400) -23) 
                 });
             }, 400);
         });
-        $(document).on('touchstart', function(e){
+        $(document).on("touchstart", function(e){
             setTimeout(function(){  
-                $('.thingy').css({
+                $(".thingy").css({
                     "top":  ((e.pageY / $(document).height() * 400) -53), 
                     "left": ((e.pageX / $(document).width() * 400) -23) 
                 });
             }, 400);
         });
-        
+
     </script>
     
 </body>    

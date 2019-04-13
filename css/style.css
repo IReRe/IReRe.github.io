@@ -24,6 +24,9 @@ body {
 .opacityNone {
     opacity: 0;
 }
+.snap{
+    scroll-snap-align: end;
+}
 
 .switchButtonIcon p:nth-child(1){
     display: block; 
